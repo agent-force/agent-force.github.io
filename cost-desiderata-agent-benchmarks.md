@@ -38,6 +38,7 @@ TODO: Add call for participation insights
 ## Authors
 
 This project is co-led by [Zonghan Yang](https://minicheshire.github.io) (yangzh20@mails.tsinghua.edu.cn), [An Liu](https://github.com/xxmlala) (la22@mails.tsinghua.edu.cn), and [Zijun Liu](https://github.com/BBQGOD) (liuzijun20@mails.tsinghua.edu.cn). 
+
 This project is not possible without the following members (in alphabetical order):
 - **Graduate students and Postdocs:** Zhicheng Guo, Yile Wang, Zeyuan Yang.
 - **Undergraduate students:** Xinrui Chen, Qingyuan Hu, Kaiming Liu, Fangzhou Xiong, Zhenhe Zhang.
