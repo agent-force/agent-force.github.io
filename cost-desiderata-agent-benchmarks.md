@@ -21,7 +21,7 @@ Try out C-WebShop at the live site [here]()!
 TODO: Add a video here.
 
 The design of C-WebShop integrates the costs from the agent itself, the user to be assisted, and the environment to be interacted with. In C-WebShop, 
-- The agent needs to minimize its own monetary and time expenditures in addition to completing the tasks. 
+- The agent needs to minimize its own monetary and time expenditures besides completing tasks.
 - The agent needs to analyze the user's initial profile, tracking and inferring a series of shopping instructions. This incurs the cost for agents to align with human intentions.
 - The search results in C-WebShop evolve with the historical click actions because of a reranking sorting mechanism. This incurs the cost when agents attempt to explore the environment.
 
@@ -37,7 +37,7 @@ TODO: Add call for participation insights
 
 ## Authors
 
-This project is co-led by [Zonghan Yang](https://minicheshire.github.io) (**yangzh20@mails.tsinghua.edu.cn**), [An Liu](https://github.com/xxmlala) (**la22@mails.tsinghua.edu.cn**), and [Zijun Liu](https://github.com/BBQGOD) (**liuzijun20@mails.tsinghua.edu.cn**). This project is not possible without the following members (in alphabetical order):
+This project is co-led by [Zonghan Yang](https://minicheshire.github.io) (yangzh20@mails.tsinghua.edu.cn), [An Liu](https://github.com/xxmlala) (la22@mails.tsinghua.edu.cn), and [Zijun Liu](https://github.com/BBQGOD) (liuzijun20@mails.tsinghua.edu.cn). This project is not possible without the following members (in alphabetical order):
 - **Graduate students and Postdocs:** Zhicheng Guo, Yile Wang, Zeyuan Yang.
 - **Undergraduate students:** Xinrui Chen, Qingyuan Hu, Kaiming Liu, Fangzhou Xiong, Zhenhe Zhang.
 - **Additional Acknowledgements:** Chi Chen, Fuwen Luo, Ziyue Wang, Siyu Wang, Xiaolong Wang.
