@@ -6,7 +6,7 @@ layout: cost-desiderata-agent-research
 
 With the impressive capabilities of Large Language Models (LLMs), there is an emerging trend of utilizing LLMs to assist people in automatically completing daily tasks, known as "LLM-powered Agents as Assistants." However, a frequently overlooked aspect in the benchmark design and methodological research of LLM-powered Agents is the concept of **cost** incurred by the entire Agent system, which impedes its implementation in practice. By inspecting the components of an Agent system, we identify three lines of cost: **alignment cost** from the human user to be assisted, **exploration cost** from the potentially changing environment, and **self cost** of the LLM-powered agent itself. Existing benchmarks and techniques of LLM-powered agents lack consideration for one or more types of costs in our categorization. 
 
-To further demonstrate the significance of **cost** for LLM-powered agents, we constructed a cost-sensitive online shopping website, C-WebShop, on top of the existing [WebShop](https://webshop-pnlp.github.io/) environment. In C-WebShop, an agent needs to infer user intentions and cope with changeable ranking of searched items, while minimizing self expenditures at the same time. Extensive experiments demonstrate that existing LLM-powered agent techniques exhibit suboptimal performance tradeoff between task success and cost in C-WebShop, while our initial methods are able to achieve a better overall performance. This indicates a significant potential for improvement in LLM-powered agent methodologies under cost-sensitive benchmarking scenarios.
+To further demonstrate the significance of **cost** for LLM-powered agents, we constructed a cost-sensitive online shopping website, C-WebShop, on top of the existing [WebShop](https://webshop-pnlp.github.io/) environment ([Yao et al., 2022](https://arxiv.org/abs/2207.01206)). In C-WebShop, an agent needs to infer user intentions and cope with changeable ranking of searched items, while minimizing self expenditures at the same time. Extensive experiments demonstrate that existing LLM-powered agent techniques exhibit suboptimal performance tradeoff between task success and cost in C-WebShop, while our initial methods are able to achieve a better overall performance. This indicates a significant potential for improvement in LLM-powered agent methodologies under cost-sensitive benchmarking scenarios.
 
 ## Categories of Cost in Agent Systems
 
@@ -27,7 +27,7 @@ To further validate the necessity of cost considerations in both LLM-powered age
 
 ## C-WebShop
 
-Motivated by the cost desiderata and categories, we integrate several types of cost that agent benchmarks should take care of into the famous [WebShop](https://webshop-pnlp.github.io/) environment and construct C-WebShop.
+Motivated by the cost desiderata and categories, we integrate several types of cost that agent benchmarks should take care of into the famous [WebShop](https://webshop-pnlp.github.io/) environment ([Yao et al., 2022](https://arxiv.org/abs/2207.01206)) and construct C-WebShop.
 
 Try out C-WebShop at the live site [here](http://49.232.144.86:5000)!
 
