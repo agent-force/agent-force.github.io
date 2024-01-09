@@ -34,9 +34,9 @@ Try out C-WebShop at the live site [here](http://49.232.144.86:5000)!
 The design of C-WebShop integrates the costs from the agent itself, the user to be assisted, and the environment to be interacted with. In C-WebShop, 
 
 - The agent needs to analyze the user's initial profile, tracking and inferring a series of shopping instructions. This incurs the cost for agents to align with human intentions.
-<div style="text-align:center;">
-   <li><img src="assets/static/user-cost.gif" width="95%"></li>
-</div>
+   <div style="text-align:center;">
+      <img src="assets/static/user-cost.gif" width="95%">
+   </div>
 
 - The search results in C-WebShop evolve with the historical click actions because of a reranking sorting mechanism. This incurs the cost when agents attempt to explore the environment.
 TODO: gif3
