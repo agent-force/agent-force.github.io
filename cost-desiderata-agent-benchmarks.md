@@ -28,7 +28,7 @@ The design of C-WebShop integrates the costs from the agent itself, the user to 
 - The agent needs to minimize its own monetary and time expenditures besides completing tasks.
 TODO: gif1
 
-Check our [code]() for detailed setup if you want to deploy C-WebShop locally.
+Check out our [**code**]() for detailed setup if you want to deploy C-WebShop locally.
 
 ## Performance of Existing Techniques
 
