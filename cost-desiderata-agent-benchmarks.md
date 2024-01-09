@@ -8,9 +8,22 @@ With the impressive capabilities of Large Language Models (LLMs), there is an em
 
 To further demonstrate the significance of **cost** for LLM-powered agents, we constructed C-WebShop on top of the existing environment, WebShop, where LLM-powered agents provide online shopping assistance. In C-WebShop, an agent needs to infer human intentions (cost from the user) and deal with world changes (cost from the interactive environment), as well as minimizing self expenditures (cost from the agent itself). Extensive experiments demonstrate that existing LLM-powered agent techniques exhibit suboptimal performance in C-WebShop. This indicates a significant potential for improvement in LLM-powered agent technology under cost-sensitive benchmarking scenarios.
 
-## Why Cost? And Cost Categories
+## Categories of Cost in Agent Systems
 
-Cost is an inherent property in an Agent system, which is often overlooked by existing LLM-powered agent research. TBA
+Cost is an inherent property in LLM-powered Agent systems, which is often overlooked by current research. An LLM-powered Agent system can be recognized as a combination of three roles:
+- **A human user**. A human user has a specific task to complete by acting in the environment.
+- **An interactive environment**. The environment provides feedback to the action taken.
+- **An LLM-powered agent**. An LLM-powered agent assists the human user with the task by leveraging its superior language ability and interacting with the environment.
+
+Along with the interaction among the LLM-powered agent, the human user, and the interactive environment, different types of cost naturally emerge:
+
+- **Alignment cost from the human user**: The agent needs to correctly recognize the intentions from the human user. This is equivalent to LLM alignment when the interaction consists of a single turn. In the multi-turn setting, however, the agent might need to track and infer the preferences not directly visible from the user instructions (_e.g._, personal tendencies and safety concerns), posing unique challenges about **alignment cost**.
+
+- **Exploration cost from the environment**: The agent needs to deal with a potentially changing environment. The real-world scenarios are often non-Markovian, which requires the agent to infer the hidden state from the history of observations. The changes of the environment can be attributed to the past actions taken and/or its inherent time-variant properties. This incurs **exploration cost** for agents, as blindly taking actions and gathering information might lead to significant changes in the response of the environment.
+
+- **Self Cost of the LLM-powered agent**: Perhaps the most natural (but surprisingly often overlooked!) cost of an LLM-powered agent is its **self cost**. While exhibiting outstanding performance, the underlying LLMs (esp. proprietary ones) require time and money for inference. This practical aspect further hurdles the agent's exploration in the environment, as the self cost dramatically accumulates with the sampling over reasoning and external actions.
+
+To further validate the necessity of cost considerations in both LLM-powered agent benchmarks and methdologies, we construct a cost-sensitive online web shopping environment, C-WebShop.
 
 ## C-WebShop
 
@@ -18,13 +31,14 @@ Motivated by the cost desiderata and categories, we integrate several types of c
 
 Try out C-WebShop at the live site [here](http://49.232.144.86:5000)!
 
+The design of C-WebShop integrates the costs from the agent itself, the user to be assisted, and the environment to be interacted with. In C-WebShop, 
+
 - The agent needs to analyze the user's initial profile, tracking and inferring a series of shopping instructions. This incurs the cost for agents to align with human intentions.
-TODO: gif2
+<img src="assets/static/user-cost.gif">
 
 - The search results in C-WebShop evolve with the historical click actions because of a reranking sorting mechanism. This incurs the cost when agents attempt to explore the environment.
 TODO: gif3
 
-The design of C-WebShop integrates the costs from the agent itself, the user to be assisted, and the environment to be interacted with. In C-WebShop, 
 - The agent needs to minimize its own monetary and time expenditures besides completing tasks.
 TODO: gif1
 
