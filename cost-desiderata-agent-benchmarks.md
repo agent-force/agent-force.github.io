@@ -41,7 +41,7 @@ The design of C-WebShop integrates the costs from the agent itself, the user to 
 
 - The search results in C-WebShop evolve with the historical click actions because of a reranking sorting mechanism. This corresponds with the **exploration cost from the environment**.
 
-   TODO: add a gif here
+   A gif to be added here
 
 - The agent needs to minimize its own monetary and time expenditures besides completing tasks. This corresponds with the **self cost of the LLM-powered agent**.
 
@@ -49,11 +49,13 @@ The design of C-WebShop integrates the costs from the agent itself, the user to 
       <img src="assets/static/self-cost-cwebshop.gif" width="95%">
    </div>
 
-Check out our [**code**]() for detailed setup if you want to deploy C-WebShop locally.
+Check out our [**code**](https://github.com/minicheshire/C-WebShop/) for detailed setup if you want to deploy C-WebShop locally.
 
 ## Performance of Existing Techniques
 
 TODO: Add performance comparison tables
+
+Check out our [**code**]() to reproduce the results of the LLM-powered agent baselines, as well as the wrapper of runtime environment that computes self cost.
 
 ## Actionable Insights
 
@@ -66,7 +68,7 @@ TODO: Add performance comparison tables
 - **Toward automatic cost discovery through agent's continual interaction.**
    While we have listed several types of cost, novel sources of cost are expected to be discovered in different instantiations of Agent systems. We envision the future where an agent can improve upon itself through continual interaction with both human users and environment: novel cost are constantly discovered and taken into account by LLM-powered agent, leading to better use and efficiency.
 
-If interested, stay tuned for our paper (will be on arXiv soon)!
+If interested, stay tuned for our **paper** (will be on arXiv soon)!
 
 ## Authors
 
