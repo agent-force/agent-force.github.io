@@ -4,9 +4,9 @@ layout: cost-desiderata-agent-benchmarks
 
 ## Abstract
 
-With the impressive capabilities of Large Language Models (LLMs), there is an emerging trend of utilizing LLMs to assist people in automatically completing daily tasks, known as "LLM-powered Agents as Assistants." However, a frequently overlooked aspect in the benchmark design and methodological research of LLM-powered Agents is the concept of **cost** incurred by the entire Agent system, which impedes its implementation in practice. In this work, we inspect the three components in an Agent system: the human user, the LLM-powered agent, and the interactive environment, and categorize different types of costs in an Agent system revolving around these roles. Existing benchmarks and techniques of LLM-powered agents lack consideration for one or more types of costs in our categorization.
+With the impressive capabilities of Large Language Models (LLMs), there is an emerging trend of utilizing LLMs to assist people in automatically completing daily tasks, known as "LLM-powered Agents as Assistants." However, a frequently overlooked aspect in the benchmark design and methodological research of LLM-powered Agents is the concept of **cost** incurred by the entire Agent system, which impedes its implementation in practice. By inspecting the components of an Agent system, we identify three lines of cost: **alignment cost** from the human user to be assisted, **exploration cost** from the potentially changing environment, and **self cost** of the LLM-powered agent itself. Existing benchmarks and techniques of LLM-powered agents lack consideration for one or more types of costs in our categorization. 
 
-To further demonstrate the significance of **cost** for LLM-powered agents, we constructed C-WebShop on top of the existing environment, WebShop, where LLM-powered agents provide online shopping assistance. In C-WebShop, an agent needs to infer human intentions (cost from the user) and deal with world changes (cost from the interactive environment), as well as minimizing self expenditures (cost from the agent itself). Extensive experiments demonstrate that existing LLM-powered agent techniques exhibit suboptimal performance in C-WebShop. This indicates a significant potential for improvement in LLM-powered agent technology under cost-sensitive benchmarking scenarios.
+To further demonstrate the significance of **cost** for LLM-powered agents, we constructed a cost-sensitive online shopping website, C-WebShop, on top of the existing WebShop environment. In C-WebShop, an agent needs to infer user intentions and cope with changeable ranking of searched items, while minimizing self expenditures at the same time. Extensive experiments demonstrate that existing LLM-powered agent techniques exhibit suboptimal performance tradeoff between task success and cost in C-WebShop. This indicates a significant potential for improvement in LLM-powered agent technology under cost-sensitive benchmarking scenarios.
 
 ## Categories of Cost in Agent Systems
 
@@ -23,7 +23,7 @@ Along with the interaction among the LLM-powered agent, the human user, and the 
 
 - **Self cost of the LLM-powered agent**: Perhaps the most natural (but surprisingly often overlooked!) cost of an LLM-powered agent is its **self cost**. While exhibiting outstanding performance, the underlying LLMs (esp. proprietary ones) require time and money for inference. This practical aspect further hurdles the agent's exploration in the environment, as the self cost dramatically accumulates with the sampling over reasoning and external actions.
 
-To further validate the necessity of cost considerations in both LLM-powered agent benchmarks and methdologies, we construct a cost-sensitive online web shopping environment, C-WebShop.
+To further validate the necessity of cost considerations in both LLM-powered agent benchmarks and methdologies, we construct a cost-sensitive online shopping environment, C-WebShop.
 
 ## C-WebShop
 
