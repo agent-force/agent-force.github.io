@@ -6,7 +6,7 @@ layout: cost-desiderata-agent-benchmarks
 <b>Cost exists around all the roles in an LLM-powered Agent system: </b>
 </div>
 
-<video controls width="90%">
+<video controls width="100%">
 <source src="assets/static/vid-1.mp4" type="video/mp4">
 </video>
 
