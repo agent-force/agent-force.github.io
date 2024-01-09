@@ -2,6 +2,14 @@
 layout: cost-desiderata-agent-benchmarks
 ---
 
+<div style="text-align:center;">
+<b>Cost exists around all the roles in an LLM-powered Agent system: </b>
+</div>
+
+<video controls width="90%">
+<source src="assets/static/vid-1.mp4" type="video/mp4">
+</video>
+
 ## Abstract
 
 With the impressive capabilities of Large Language Models (LLMs), there is an emerging trend of utilizing LLMs to assist people in automatically completing daily tasks, known as "LLM-powered Agents as Assistants." However, a frequently overlooked aspect in the benchmark design and methodological research of LLM-powered Agents is the concept of **cost** incurred by the entire Agent system, which impedes its implementation in practice. In this work, we inspect the three components in an Agent system: the human user, the LLM-powered agent, and the interactive environment, and categorize different types of costs in an Agent system revolving around these roles. Existing benchmarks and techniques of LLM-powered agents lack consideration for one or more types of costs in our categorization.
