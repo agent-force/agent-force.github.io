@@ -21,7 +21,7 @@ Along with the interaction among the LLM-powered agent, the human user, and the 
 
 - **Exploration cost from the environment**: The agent needs to deal with a potentially changing environment. The real-world scenarios are often non-Markovian, which requires the agent to infer the hidden state from the history of observations. The changes of the environment can be attributed to the past actions taken and/or its inherent time-variant properties. This incurs **exploration cost** for agents, as blindly taking actions and gathering information might lead to significant changes in the response of the environment.
 
-- **Self Cost of the LLM-powered agent**: Perhaps the most natural (but surprisingly often overlooked!) cost of an LLM-powered agent is its **self cost**. While exhibiting outstanding performance, the underlying LLMs (esp. proprietary ones) require time and money for inference. This practical aspect further hurdles the agent's exploration in the environment, as the self cost dramatically accumulates with the sampling over reasoning and external actions.
+- **Self cost of the LLM-powered agent**: Perhaps the most natural (but surprisingly often overlooked!) cost of an LLM-powered agent is its **self cost**. While exhibiting outstanding performance, the underlying LLMs (esp. proprietary ones) require time and money for inference. This practical aspect further hurdles the agent's exploration in the environment, as the self cost dramatically accumulates with the sampling over reasoning and external actions.
 
 To further validate the necessity of cost considerations in both LLM-powered agent benchmarks and methdologies, we construct a cost-sensitive online web shopping environment, C-WebShop.
 
@@ -33,16 +33,19 @@ Try out C-WebShop at the live site [here](http://49.232.144.86:5000)!
 
 The design of C-WebShop integrates the costs from the agent itself, the user to be assisted, and the environment to be interacted with. In C-WebShop, 
 
-- The agent needs to analyze the user's initial profile, tracking and inferring a series of shopping instructions. This incurs the cost for agents to align with human intentions.
+- The agent needs to analyze the user's initial profile, tracking and inferring a series of shopping instructions. This corresponds with the **alignment cost from the human user**.
+
    <div style="text-align:center;">
       <img src="assets/static/user-cost.gif" width="95%">
    </div>
 
-- The search results in C-WebShop evolve with the historical click actions because of a reranking sorting mechanism. This incurs the cost when agents attempt to explore the environment.
-TODO: gif3
+- The search results in C-WebShop evolve with the historical click actions because of a reranking sorting mechanism. This corresponds with the **exploration cost from the environment**.
 
-- The agent needs to minimize its own monetary and time expenditures besides completing tasks.
-TODO: gif1
+   TODO: gif3
+
+- The agent needs to minimize its own monetary and time expenditures besides completing tasks. This corresponds with the **self cost of the LLM-powered agent**.
+
+   TODO: gif1
 
 Check out our [**code**]() for detailed setup if you want to deploy C-WebShop locally.
 
