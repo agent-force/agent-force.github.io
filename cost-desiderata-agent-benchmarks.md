@@ -43,7 +43,7 @@ TODO: Add performance comparison tables
    Alignment research aims to steer a model to faithfully follow instructions. To minimize cost in an Agent system, alignment techniques can be helpful to the LLM-powered agent in following different instructions of cost minimization. For example, one can leverage ideas like Constitutional AI to integrate cost-relevant rules into the system's objective to be optimized.
 
 - **Toward automatic cost discovery through agent's continual interaction.**
-   While we have listed several types of cost, novel sources of cost are expected to be found in different instantiations of Agent systems. We envision the future where an agent can improve upon itself through continual interaction with both human users and environment: novel sources of cost are constantly discovered and taken into account by LLM-powered agent, leading to better use and efficiency in real-world scenarios.
+   While we have listed several types of cost, novel sources of cost are expected to be discovered in different instantiations of Agent systems. We envision the future where an agent can improve upon itself through continual interaction with both human users and environment: novel cost are constantly discovered and taken into account by LLM-powered agent, leading to better use and efficiency.
 
 If interested, stay tuned for our paper (will be on arXiv soon)!
 
