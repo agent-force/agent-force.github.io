@@ -77,6 +77,6 @@ This project is co-led by [Zonghan Yang](https://minicheshire.github.io) (yangzh
 This project is not possible without the following members (in alphabetical order):
 - **Graduate students and Postdocs:** Zhicheng Guo, Yile Wang, Zeyuan Yang.
 - **Undergraduate students:** Xinrui Chen, Qingyuan Hu, Kaiming Liu, Fangzhou Xiong, Zhenhe Zhang.
-- **Additional Acknowledgements:** Chi Chen, Fuwen Luo, Ziyue Wang, Siyu Wang, Xiaolong Wang for valuable suggestions; Ziwei Chi for logo design.
+- **Additional Acknowledgements:** Chi Chen, Fuwen Luo, Ziyue Wang, Siyu Wang, Xiaolong Wang for valuable suggestions and human evaluations; Ziwei Chi for logo design.
 
 This project is advised by [Peng Li](https://www.lpeng.net/) (lipeng@air.tsinghua.edu.cn) and [Yang Liu](https://nlp.csai.tsinghua.edu.cn/~ly) (liuyang2011@tsinghua.edu.cn). 
