@@ -36,7 +36,7 @@ The design of C-WebShop integrates the costs from the agent itself, the user to 
 - The agent needs to analyze the user's initial profile, tracking and inferring a series of shopping instructions. This corresponds with the **alignment cost from the human user**.
 
    <div style="text-align:center;">
-      <img src="assets/static/alignment-cost-cwebshop.gif" width="95%">
+      <img src="assets/static/alignment-cost-cwebshop.gif" width="90%">
    </div>
 
 - The search results in C-WebShop evolve with the historical click actions because of a reranking sorting mechanism. This corresponds with the **exploration cost from the environment**.
