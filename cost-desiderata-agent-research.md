@@ -41,8 +41,10 @@ The design of C-WebShop integrates the costs from the agent itself, the user to 
 
 - The search results in C-WebShop evolve with the historical click actions because of a reranking sorting mechanism. This corresponds with the **exploration cost from the environment**.
 
-   A gif to be added here
-
+   <div style="text-align:center;">
+      <img src="assets/static/exploration-cost-cwebshop.gif" width="95%">
+   </div>
+   
 - The agent needs to minimize its own monetary and time expenditures besides completing tasks. This corresponds with the **self cost of the LLM-powered agent**.
 
    <div style="text-align:center;">
