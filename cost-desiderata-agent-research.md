@@ -62,7 +62,7 @@ While none of the existing methods were designed to optimize cost, we initiate o
    - _Profile_ is the pool of _insights stored in a structured manner.
 
    <div style="text-align:center;">
-      <img src="assets/static/illustration-of-our-method.jpg" width="95%">
+      <img src="assets/static/illustration-of-our-method.jpeg" width="95%">
    </div>
 
 Our method is illustrated in the above figure. The performance comparison on C-WebShop is shown as follows:
