@@ -57,7 +57,7 @@ Check out our [**code**](https://github.com/minicheshire/C-WebShop/) for detaile
 
 We benchmark existing LLM-powered agent techniques on C-WebShop, including **COT-SC** [(Wang et al., 2023)](https://arxiv.org/abs/2203.11171), **ReAct** [(Yao et al., 2023)](https://arxiv.org/abs/2210.03629), **ReAct-SC** (ReAct with self-consistency). We also adapt **LATS** [(Zhou et al., 2023)](https://arxiv.org/abs/2310.04406), a method that unifies ReAct, self-reflection, and tree search based planning, to our benchmark for comparison.
 
-While none of the existing methods were designed to optimize cost, we initiate our cost-sensitive LLM-powered agent method on top of ReAct. Our method consists of modules of _insight_ and _profile_:
+While none of the existing methods were designed to optimize cost, we initiate our cost-sensitive LLM-powered agent (**C-Agent**) on top of ReAct. Our method consists of modules of _insight_ and _profile_:
    - _Insight_ is extracted by analyzing the key and redundant actions from each query trajectory.
    - _Profile_ is the pool of _insights stored in a structured manner.
 
@@ -65,11 +65,11 @@ While none of the existing methods were designed to optimize cost, we initiate o
       <img src="assets/static/illustration-of-our-method.jpeg" width="95%">
    </div>
 
-**Our method** is illustrated in the above figure. The performance comparison on C-WebShop is shown as follows:
+The **C-Agent** framework is illustrated in the above figure. The performance comparison on C-WebShop is shown as follows:
 
    TODO: ADD FIGURE
 
-From the results, we can tell that the existing advanced techniques like self-reflection and tree search based planning are suboptimal in cost-sensitive scenarios. Compared with ReAct, our framework achieves the best overall performance balancing task completion and cost. We call for more research into cost-sensitive LLM-powered agent methodologies!
+From the results, we can tell that the existing advanced techniques like self-reflection and tree search based planning are suboptimal in cost-sensitive scenarios. Compared with **ReAct**, our **C-Agent** framework achieves the best overall performance balancing task completion and cost. We call for more research into cost-sensitive LLM-powered agent methodologies!
 
 Check out our [**code**]() to reproduce the results of the LLM-powered agent baselines, as well as the wrapper of runtime environment that computes self cost.
 
