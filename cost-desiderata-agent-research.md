@@ -65,7 +65,7 @@ While none of the existing methods were designed to optimize cost, we initiate o
       <img src="assets/static/illustration-of-our-method.jpeg" width="95%">
    </div>
 
-Our method is illustrated in the above figure. The performance comparison on C-WebShop is shown as follows:
+**Our method** is illustrated in the above figure. The performance comparison on C-WebShop is shown as follows:
 
    TODO: ADD FIGURE
 
