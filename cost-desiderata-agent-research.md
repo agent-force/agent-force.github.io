@@ -61,7 +61,11 @@ While none of the existing methods were designed to optimize cost, we initiate o
    - _Insight_ is extracted by analyzing the key and redundant actions from each query trajectory.
    - _Profile_ is the pool of _insights stored in a structured manner.
 
-The performance comparison on C-WebShop is shown as follows:
+   <div style="text-align:center;">
+      <img src="assets/static/illustration-of-our-method.jpg" width="95%">
+   </div>
+
+Our method is illustrated in the above figure. The performance comparison on C-WebShop is shown as follows:
 
    TODO: ADD FIGURE
 
