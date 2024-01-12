@@ -68,7 +68,7 @@ While none of the existing methods were designed to optimize cost, we initiate o
 The **C-Agent** framework is illustrated in the above figure. The performance comparison on C-WebShop is shown as follows:
 
    <div style="text-align:center;">
-      <img src="assets/static/performance-comparison.png" width="95%">
+      <img src="assets/static/performance-comparison.png" width="90%">
    </div>
 
 From the results, we can tell that the existing advanced techniques like self-reflection and tree search based planning are suboptimal in cost-sensitive scenarios. Compared with **ReAct**, our **C-Agent** framework achieves the best overall performance balancing task completion and cost. We call for more research into cost-sensitive LLM-powered agent methodologies!
