@@ -51,7 +51,7 @@ The design of C-WebShop integrates the costs from the agent itself, the user to 
       <img src="assets/static/self-cost-cwebshop.gif" width="95%">
    </div>
 
-Check out our [**code**](https://github.com/minicheshire/C-WebShop/) for detailed setup if you want to deploy C-WebShop locally.
+Check out our [**code**](https://github.com/AgentForceTeamOfficial/C-WebShop) for detailed setup if you want to deploy C-WebShop locally.
 
 ## On Cost-Sensitive LLM-Powered Agents
 
@@ -71,9 +71,9 @@ The **C-Agent** framework is illustrated in the above figure. The performance co
       <img src="assets/static/performance-comparison.png" width="90%">
    </div>
 
-From the results, we can tell that the existing advanced techniques like self-reflection and tree search based planning are suboptimal in cost-sensitive scenarios. Compared with **ReAct**, our **C-Agent** framework achieves the best overall performance balancing task completion and cost. We call for more research into cost-sensitive LLM-powered agent methodologies!
+From the results, we can tell that the existing components like self-reflection and tree search based planning in advanced techniques like **LATS** are suboptimal in cost-sensitive scenarios, where the self cost is reflected in the money and the time usage, and the exploration cost is exhibited in the obtained reward. Compared with **ReAct**, our **C-Agent** framework achieves the best overall performance balancing task completion and cost. We call for more research into cost-sensitive LLM-powered agent methodologies!
 
-Check out our [**code**]() to reproduce the results of the LLM-powered agent baselines, as well as the wrapper of runtime environment that computes self cost.
+Check out our [**code**](https://github.com/AgentForceTeamOfficial/C-Agent) to reproduce the results of the LLM-powered agent baselines, as well as the wrapper of runtime environment that computes self cost.
 
 ## Actionable Insights
 
