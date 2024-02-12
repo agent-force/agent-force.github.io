@@ -8,7 +8,9 @@ The rapid progress of foundation models has led to the prosperity of autonomous 
 
 ## Principles of Unified Alignment for Agents
 
-TBA
+   <div style="text-align:center;">
+      <img src="assets/static/fig-2.png" width="95%">
+   </div>
 
 Agents, humans, and the environment are the three components that make up a working system of agents. To promote the orchestration of the three roles, the agents should work in the direction of eliminating the gap between agents and humans, agents and the environment, as well as adapting to the constraints imposed on the agents themselves. Based on this, we propose the principles of **U**nified **A**lignment for **A**gents (**UA**$$^2$$). To enumerate:
 
@@ -34,7 +36,9 @@ For benchmarks, we review both the digital and the embodied ones, and consider t
 
 The comparative review is summarized in the following table:
 
-TBA HERE
+   <div style="text-align:center;">
+      <img src="assets/static/table-1.png" width="95%">
+   </div>
 
 From the table, it is witnessed that existing benchmarks still cannot adequately cover all the three sources of alignments for agents. Specifically, in general, the development of digital benchmarks lags behind that of embodied benchmarks. This underscores the need for the construction of more comprehensive and realistic benchmarks, as well as fine-grained evaluation metrics that account for the principles of **UA**$$^2$$.
 
@@ -43,7 +47,9 @@ From the table, it is witnessed that existing benchmarks still cannot adequately
 
 We continue to review representative agent methods from the perspective of \textbf{UA}$^2$. For each method, we analyze whether it actively seeks alignment with *human intentions*, *environmental dynamics*, or *self-constraints*. The analysis is illustrated in the following figure:
 
-TBA HERE
+   <div style="text-align:center;">
+      <img src="assets/static/fig-3.png" width="95%">
+   </div>
 
 In our analysis, we categorize each methods according to the following criteria:
 
@@ -93,7 +99,9 @@ Following the principles of **UA**$$^2$$, we initiate our agent by introducing t
 
 The benchmarking results on the retrofitted WebShop are shown as follows:
 
-TBA HERE
+   <div style="text-align:center;">
+      <img src="assets/static/table-2.png" width="95%">
+   </div>
 
 
 Check out our [**code**](https://github.com/AgentForceTeamOfficial/UA2-Agent) to reproduce the results of each methods.
@@ -105,7 +113,7 @@ Envisioning the future of autonomous agents powered by foundation models in real
 
 - **Synergizing agents with alignment research.** For example, one can leverage ideas like Constitutional AI ([Bai et al., 2022](https://www.anthropic.com/index/constitutional-ai-harmlessness-from-ai-feedback)) to integrate the principles of unified alignment into the objectives of the agents.
 
-- **Constructing realistic agent benchmarks.** Take **UA**$$^{2}$$ into account, we advocate for more realistic simulation and sand-box design reflecting the intricate scenarios with nuanced logistics and details.
+- **Constructing realistic agent benchmarks.** Taking **UA**$$^{2}$$ into account, we advocate for more realistic benchmark design that reflects the intricate real-world scenarios.
 
 
 - **Developing holistic evaluations for agents.** The dissection of the agent performance is necessary to assess the obedience of each principle of **UA**$$^{2}$$.
