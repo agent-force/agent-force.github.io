@@ -45,7 +45,7 @@ From the table, it is witnessed that existing benchmarks still cannot adequately
 
 ### Methods
 
-We continue to review representative agent methods from the perspective of \textbf{UA}$^2$. For each method, we analyze whether it actively seeks alignment with *human intentions*, *environmental dynamics*, or *self-constraints*. The analysis is illustrated in the following figure:
+We continue to review representative agent methods from the perspective of **UA**$$^2$$. For each method, we analyze whether it actively seeks alignment with *human intentions*, *environmental dynamics*, or *self-constraints*. The analysis is illustrated in the following figure:
 
    <div style="text-align:center;">
       <img src="assets/static/fig-3.png" width="95%">
@@ -100,11 +100,10 @@ Following the principles of **UA**$$^2$$, we initiate our agent by introducing t
 The benchmarking results on the retrofitted WebShop are shown as follows:
 
    <div style="text-align:center;">
-      <img src="assets/static/table-2.png" width="95%">
+      <img src="assets/static/table-2-contents.png" width="95%">
    </div>
 
-
-Check out our [**code**]() to reproduce the results of each methods.
+In the table, the averaged reward, success rate (SR) (%), the alignment gap (%) with human intentions ($$\mathbf{G}_\mathrm{HI}$$) and environment dynamics ($$\mathbf{G}_\mathrm{ED}$$), time (s) and money ($) cost of all methods are benchmarked in our retrofitted WebShop environment. The better performance under each metric is indicated by the darker <p style="color: green">green</p> shades. Still, check out our [**paper**]() and [**code**]() for details =)
 
 ## Actionable Insights
 
