@@ -53,13 +53,13 @@ We continue to review representative agent methods from the perspective of \text
 
 In our analysis, we categorize each methods according to the following criteria:
 
-- By aligning with *human intentions*, the agents should coordinate with humans through reasoning or experience summarization. Candidate methods in this vein are HLA, ExpeL, CAMEL, etc.
+- By aligning with *human intentions*, the agents should coordinate with humans through reasoning or experience summarization. Candidate methods in this vein are HLA ([Liu et al., 2023](https://arxiv.org/abs/2312.15224)), ExpeL ([Zhao et al., 2023](https://arxiv.org/abs/2308.10144)), CAMEL ([Li et al., 2023](https://arxiv.org/abs/2303.17760)), etc.
 
-- By aligning with *environmental dynamics*, the agents ground themselves with external information from the environment. Example methods in this category are Reflexion, RAP, CLIN, etc. 
+- By aligning with *environmental dynamics*, the agents ground themselves with external information from the environment. Example methods in this category are Reflexion ([Shinn et al., 2023](https://arxiv.org/abs/2303.11366)), RAP ([Hao et al., 2023](https://arxiv.org/abs/2305.14992)), CLIN ([Majumder et al., 2023](https://arxiv.org/abs/2310.10134)), etc. 
 
-- By aligning with *self-constraints*, the agents should adopt an adaptive strategy in the process of task execution and/or group construction. Representative frameworks in this category are SwiftSage, RetroFormer, and DyLAN. Finetuning a small-sized foundation model is also beneficial to the obedience of self-constraints, as some API calls of proprietary foundation models can be saved (examples: FireAct and AutoAct).
+- By aligning with *self-constraints*, the agents should adopt an adaptive strategy in the process of task execution and/or group construction. Representative frameworks in this category are SwiftSage ([Lin et al., 2023](https://arxiv.org/abs/2305.17390)), RetroFormer ([Yao et al., 2023](https://arxiv.org/abs/2308.02151)), and DyLAN ([Liu et al., 2023](https://arxiv.org/abs/2310.02170)). Finetuning a small-sized foundation model is also beneficial to the obedience of self-constraints, as some API calls of proprietary foundation models can be saved (examples: FireAct ([Chen et al., 2023](https://arxiv.org/abs/2310.05915)) and AutoAct ([Qiao et al., 2024](https://arxiv.org/abs/2401.05268))).
 
-Other basic techniques like ReAct are also the fundamental elements in most of advanced agent frameworks. Despite the emergence of diverse agent methodologies, plenty of room still exists for the unified alignment of agents with *human intentions*, *environmental dynamics*, and *self-constraints* simultaneously. A common case is that a method focuses too much on a single source of alignment, but meanwhile violating other sources severely (for example, when aligning with *environmental dynamics* by sampling a huge amount of trajectories, the agent aligns poorly with *self-constraints*). Therefore, elaborate agent framework design is required to strike a good balance of alignments with all the three roles. Detailed discussions can be found in our [paper]().
+Other basic techniques like ReAct ([Yao et al., 2023](https://arxiv.org/abs/2210.03629)) are also the fundamental elements in most of advanced agent frameworks. Despite the emergence of diverse agent methodologies, plenty of room still exists for the unified alignment of agents with *human intentions*, *environmental dynamics*, and *self-constraints* simultaneously. A common case is that a method focuses too much on a single source of alignment, but meanwhile violating other sources severely (for example, when aligning with *environmental dynamics* by sampling a huge amount of trajectories, the agent aligns poorly with *self-constraints*). Therefore, elaborate agent framework design is required to strike a good balance of alignments with all the three roles. Detailed discussions can be found in our [paper]().
 
 
 ## Proof-of-Concept Studies
@@ -76,22 +76,22 @@ Try out the retrofitted WebShop at the live site [here](http://49.232.144.86:500
 - The agent needs to analyze the user's initial profile, tracking and inferring a series of shopping instructions. As user profiles and ambiguous intentions are integrated, this covers the alignment with *human intentions*:
 
    <div style="text-align:center;">
-      <img src="assets/static/alignment-cost-cwebshop.gif" width="90%">
+      <img src="assets/static/human-intentions-r-webshop.gif" width="90%">
    </div>
 
 - The search results in C-WebShop evolve with the historical click actions because of personalized reranking mechanisms. As the environment now becomes highly partially-observable, this covers the alignment with *environmental dynamics*:
 
    <div style="text-align:center;">
-      <img src="assets/static/exploration-cost-cwebshop.gif" width="95%">
+      <img src="assets/static/environment-dynamics-r-webshop.gif" width="95%">
    </div>
    
 - The agent needs to minimize its own monetary and time expenditures besides completing tasks. The implementation of runtime budgetary counter corresponds with the alignment with *self-constraints*:
 
    <div style="text-align:center;">
-      <img src="assets/static/self-cost-cwebshop.gif" width="95%">
+      <img src="assets/static/self-constraints-r-webshop.gif" width="95%">
    </div>
 
-Details can be found in Section 4.1 of our [**paper**](). We've also open-sourced our [**code**](https://github.com/AgentForceTeamOfficial/retrofitted-WebShop) for detailed setup if you want to deploy the environment locally.
+Details can be found in Section 4.1 of our [**paper**](). We've also open-sourced our [**code**]() for detailed setup if you want to deploy the environment locally.
 
 ### Agent Design and Experiments
 
@@ -104,7 +104,7 @@ The benchmarking results on the retrofitted WebShop are shown as follows:
    </div>
 
 
-Check out our [**code**](https://github.com/AgentForceTeamOfficial/UA2-Agent) to reproduce the results of each methods.
+Check out our [**code**]() to reproduce the results of each methods.
 
 ## Actionable Insights
 
