@@ -22,7 +22,7 @@ Agents, humans, and the environment are the three components that make up a work
 
 ## Literature Review from the Lens of UA$$^2$$
 
-According to the principles of **UA**$$^2$$, we review the existing benchmarks and methods of agents and check if they suffice the development of agents in holistic real-world scenarios. Detailed analysis can be found in Section 3 of our [paper]().
+According to the principles of **UA**$$^2$$, we review the existing benchmarks and methods of agents and check if they suffice the development of agents in holistic real-world scenarios. Detailed analysis can be found in Section 3 of our [paper](https://arxiv.org/abs/2402.07744).
 
 ### Benchmarks
 
@@ -59,7 +59,7 @@ In our analysis, we categorize each methods according to the following criteria:
 
 - By aligning with *self-constraints*, the agents should adopt an adaptive strategy in the process of task execution and/or group construction. Representative frameworks in this category are SwiftSage ([Lin et al., 2023](https://arxiv.org/abs/2305.17390)), RetroFormer ([Yao et al., 2023](https://arxiv.org/abs/2308.02151)), and DyLAN ([Liu et al., 2023](https://arxiv.org/abs/2310.02170)). Finetuning a small-sized foundation model is also beneficial to the obedience of self-constraints, as some API calls of proprietary foundation models can be saved (examples: FireAct ([Chen et al., 2023](https://arxiv.org/abs/2310.05915)) and AutoAct ([Qiao et al., 2024](https://arxiv.org/abs/2401.05268))).
 
-Other basic techniques like ReAct ([Yao et al., 2023](https://arxiv.org/abs/2210.03629)) are also the fundamental elements in most of advanced agent frameworks. Despite the emergence of diverse agent methodologies, plenty of room still exists for the unified alignment of agents with *human intentions*, *environmental dynamics*, and *self-constraints* simultaneously. A common case is that a method focuses too much on a single source of alignment, but meanwhile violating other sources severely (for example, when aligning with *environmental dynamics* by sampling a huge amount of trajectories, the agent aligns poorly with *self-constraints*). Therefore, elaborate agent framework design is required to strike a good balance of alignments with all the three roles. Detailed discussions can be found in our [paper]().
+Other basic techniques like ReAct ([Yao et al., 2023](https://arxiv.org/abs/2210.03629)) are also the fundamental elements in most of advanced agent frameworks. Despite the emergence of diverse agent methodologies, plenty of room still exists for the unified alignment of agents with *human intentions*, *environmental dynamics*, and *self-constraints* simultaneously. A common case is that a method focuses too much on a single source of alignment, but meanwhile violating other sources severely (for example, when aligning with *environmental dynamics* by sampling a huge amount of trajectories, the agent aligns poorly with *self-constraints*). Therefore, elaborate agent framework design is required to strike a good balance of alignments with all the three roles. Detailed discussions can be found in our [paper](https://arxiv.org/abs/2402.07744).
 
 
 ## Proof-of-Concept Studies
