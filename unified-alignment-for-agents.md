@@ -124,3 +124,16 @@ Envisioning the future of autonomous agents powered by foundation models in real
 ## Contact
 
 This project is co-led by [Zonghan Yang](https://minicheshire.github.io) (yangzh20@mails.tsinghua.edu.cn), [An Liu](https://github.com/xxmlala) (la22@mails.tsinghua.edu.cn), and [Zijun Liu](https://github.com/BBQGOD) (liuzijun20@mails.tsinghua.edu.cn), and is advised by [Peng Li](https://www.lpeng.net/) (lipeng@air.tsinghua.edu.cn) and [Yang Liu](https://nlp.csai.tsinghua.edu.cn/~ly) (liuyang2011@tsinghua.edu.cn).
+
+
+## Citation
+```
+@article{yang2024unified,
+  author        = {Yang, Zonghan and Liu, An and Liu, Zijun and Liu, Kaiming and Xiong, Fangzhou and Wang, Yile and Yang, Zeyuan and Hu, Qingyuan and Chen, Xinrui and Zhang, Zhenhe and Luo, Fuwen and Guo, Zhicheng and Li, Peng and Liu, Yang},
+  title         = {Towards Unified Alignment Between Agents, Humans, and Environment},
+  year          = {2024},
+  eprint        = {2402.07744},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI}
+}
+```
