@@ -91,7 +91,7 @@ Try out the retrofitted WebShop at the live site [here](http://49.232.144.86:500
       <img src="assets/static/self-constraints-r-webshop.gif" width="95%">
    </div>
 
-Details can be found in Section 4.1 of our [**paper**](). We've also open-sourced our [**code**]() for detailed setup if you want to deploy the environment locally.
+Details can be found in Section 4.1 of our [**paper**](https://arxiv.org/abs/2402.07744). We've also open-sourced our [**code**]() for detailed setup if you want to deploy the environment locally.
 
 ### Agent Design and Experiments
 
@@ -103,7 +103,7 @@ The benchmarking results on the retrofitted WebShop are shown as follows:
       <img src="assets/static/table-2-contents.png" width="95%">
    </div>
 
-In the table, the averaged reward, success rate (SR) (%), the alignment gap (%) with human intentions ($$\mathbf{G}_\mathrm{HI}$$) and environment dynamics ($$\mathbf{G}_\mathrm{ED}$$), time (s) and money ($) cost of all methods are benchmarked in our retrofitted WebShop environment. The better performance under each metric is indicated by the darker <font color="green">green</font> shades. Still, check out our [**paper**]() and [**code**]() for details =)
+In the table, the averaged reward, success rate (SR) (%), the alignment gap (%) with human intentions ($$\mathbf{G}_\mathrm{HI}$$) and environment dynamics ($$\mathbf{G}_\mathrm{ED}$$), time (s) and money ($) cost of all methods are benchmarked in our retrofitted WebShop environment. The better performance under each metric is indicated by the darker <font color="green">green</font> shades. Still, check out our [**paper**](https://arxiv.org/abs/2402.07744) and [**code**](https://github.com/AgentForceTeamOfficial/UA2-Agent) for details =)
 
 ## Actionable Insights
 
